@@ -8,20 +8,21 @@ import sideWave from "../assets/images/side-wave.png";
   <section class="space-y-6 relative">
     <Image
       src={sideWave}
-      alt=""
-      class="absolute -top-24 lg:-top-28 2xl:-top-96 h-32 md:h-44 lg:h-60 xl:h-80 2xl:h-[80vh] w-auto"
+      alt="Gravatar of Patrick waving"
+      class="absolute -top-24  2xl:-top-96 h-32 md:h-44 lg:h-60 xl:h-80 2xl:h-[80vh] w-auto"
+      loading={"eager"}
     />
 
-    <div class="px-3 md:px-0 space-y-6 text-center max-w-screen-xl mx-auto">
+    <div class="px-3 md:px-0 space-y-6 text-center max-w-3xl xl:max-w-screen-xl mx-auto">
       <h2
-        class="font-extrabold text-4xl md:text-8xl tracking-tighter capitalize">
+        class="font-extrabold text-4xl md:text-6xl xl:text-8xl 2xl:text-9xl tracking-tighter capitalize">
         Your friendly neighborhood <br class="md:hidden" /> web developer
       </h2>
-      <p class="text-xl md:text-2xl">
+      <p class="text-xl md:text-2xl xl:text-4xl">
         Ready to tackle your next project, big or small.
       </p>
-      <div>
-        <a href="https://calendar.app.google/Nn4rYL9F3mitRLWWA">
+      <div class="space-x-3">
+        <a href="https://calendar.app.google/Nn4rYL9F3mitRLWWA" aria-label="book a call" > 
             <button class="btn btn-primary lg:btn-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +40,7 @@ import sideWave from "../assets/images/side-wave.png";
               Book a call
             </button>
           </a>
-          <a href="mailto:hello@mcgonigle.studio">
+          <a href="mailto:hello@mcgonigle.studio" aria-label="Email me">
             <button class="btn btn-outline lg:btn-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +60,7 @@ import sideWave from "../assets/images/side-wave.png";
           </a>
       </div>
       <div class="flex flex-row justify-center gap-3 px-3">
-        <a href="https://www.linkedin.com/in/mcgonigledevops/" id="linkedin">
+        <a href="https://www.linkedin.com/in/mcgonigledevops/" id="linkedin" aria-label="link to linkedin profile">
             <svg
           class="w-8 h-8"
           xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +72,7 @@ import sideWave from "../assets/images/side-wave.png";
         </svg>
         </a>
   
-        <a href="https://twitter.com/mcgonigledevops" id="x-twitter">
+        <a href="https://twitter.com/mcgonigledevops" id="x-twitter" aria-label="link to x (formerly twitter)">
             <svg
           class="w-8 h-8"
           xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +83,7 @@ import sideWave from "../assets/images/side-wave.png";
           </path>
         </svg>
         </a>
-       <a href="https://github.com/McGonigleDevOps" id="github">
+       <a href="https://github.com/McGonigleDevOps" id="github" aria-label="link to github profile">
         <svg
         class="w-8 h-8"
         xmlns="http://www.w3.org/2000/svg"

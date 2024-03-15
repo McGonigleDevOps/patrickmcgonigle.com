@@ -1,6 +1,6 @@
 ---
 const { title } = Astro.props;
-
+import { Image } from "astro:assets";
 ---
 
 <html lang="en">
@@ -20,12 +20,24 @@ const { title } = Astro.props;
   <body>
     <div class="flex flex-col h-dvh justify-between" id="content-wrapper">
       <header class="border-b py-3 px-3 flex flex-row justify-between mb-6">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-          <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-8 h-8 xl:w-10 xl:h-10">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z">
+          </path>
         </svg>
-        
+
         <div>
-            <h1 class="text-2xl text-center font-brand-serif">Patrick <strong class="font-extrabold">McGonigle</strong></h1>
+          <h1 class="text-2xl text-center font-brand-serif">
+            Patrick <strong class="font-extrabold">McGonigle</strong>
+          </h1>
         </div>
       </header>
       <main>
@@ -33,11 +45,19 @@ const { title } = Astro.props;
       </main>
       <footer class="flex flex-row justify-center items-baseline p-2">
         <div>
-          <a href="https://partnernetwork.ionos.co.uk/partner/mcgonigle.studio?origin=PartnerBadge" rel="nofollow">
-            <img src="https://images-2.partnerportal.ionos.co.uk/items/8ab817f3-298d-46a9-9265-e64f2c0a8890/profiles/323c28cb-11c2-45a4-adab-3a8b4ae97abc/badges/normal_white" alt="IONOS - Official Partner">
-            </a>
+          <a
+            href="https://partnernetwork.ionos.co.uk/partner/mcgonigle.studio?origin=PartnerBadge"
+            rel="nofollow">
+            <Image
+              src="https://images-2.partnerportal.ionos.co.uk/items/8ab817f3-298d-46a9-9265-e64f2c0a8890/profiles/323c28cb-11c2-45a4-adab-3a8b4ae97abc/badges/normal_white"
+              alt="IONOS - Official Partner"
+              aria-label="IONOS official agency partner."
+              width="150"
+              height="88"
+              loading={"eager"}
+            />
+          </a>
         </div>
-        
       </footer>
     </div>
   </body>
