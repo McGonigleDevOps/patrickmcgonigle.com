@@ -17,9 +17,9 @@ import { Image } from "astro:assets";
     />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="text-slate-800 dark:bg-slate-800 dark:text-slate-50">
     <div class="flex flex-col h-dvh justify-between" id="content-wrapper">
-      <header class="border-b py-3 px-3 flex flex-row justify-between mb-6">
+      <header class="border-b py-3 px-3 flex flex-row justify-between items-center mb-6">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -35,9 +35,12 @@ import { Image } from "astro:assets";
         </svg>
 
         <div>
-          <h1 class="text-2xl text-center font-brand-serif">
+          <h1 class="text-2xl xl:text-4xl text-center font-brand-serif">
             Patrick <strong class="font-extrabold">McGonigle</strong>
           </h1>
+        </div>
+        <div>
+
         </div>
       </header>
       <main>
