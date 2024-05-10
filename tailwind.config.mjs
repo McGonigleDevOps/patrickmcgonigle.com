@@ -15,7 +15,7 @@ export default {
 		themes: [
 		  {
 			myLightTheme: {
-   				"primary": "#e11d48",
+   				"primary": "#b8316f",
 				"secondary": "#e879f9",
 			   	"accent": "#00ffff",
 			   	"neutral": "#ff00ff",
